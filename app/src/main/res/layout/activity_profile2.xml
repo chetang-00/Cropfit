@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bb"
+    tools:context=".ProfileActivity2">
+
+    <include
+        layout="@layout/toolbar1"
+        android:id="@+id/tool2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool2"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Profile"
+            android:textSize="30sp"
+            android:textColor="#254117"
+            android:fontFamily="@font/lobster_regular"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/profile"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="NAME :"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="#254117"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inputname"
+                    android:fontFamily="sans-serif"
+                    android:text="name"
+                    android:padding="10dp"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#254117" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="PHONE NO :"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="#254117"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inputphone"
+                    android:fontFamily="sans-serif"
+                    android:text="phone_number"
+                    android:padding="10dp"
+                    android:inputType="phone"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#254117" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="ADDRESS :"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="#254117"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inputaddress1"
+                    android:fontFamily="sans-serif"
+                    android:text="door_no, house_name"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#254117" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inputaddress2"
+                    android:fontFamily="sans-serif"
+                    android:text="address_lane 1"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#254117" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inputaddress3"
+                    android:fontFamily="sans-serif"
+                    android:text="address_lane 2"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#254117" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="LANDMARK :"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="#254117"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inputlandmark"
+                    android:fontFamily="sans-serif"
+                    android:text="landmark"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#254117" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="DISTRICT :"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="#254117"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inputcity"
+                    android:fontFamily="sans-serif"
+                    android:text="distict"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#254117" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="STATE :"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="#254117"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inputstate"
+                    android:fontFamily="sans-serif"
+                    android:text="state"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#254117" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="PIN CODE :"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="#254117"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inputpincode"
+                    android:fontFamily="sans-serif"
+                    android:text="pin_code"
+                    android:padding="10dp"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#254117" />
+
+            </LinearLayout>
+
+<!--            <Button-->
+<!--                android:id="@+id/btnView"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="55dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:fontFamily="@font/kaushanscript_regular"-->
+<!--                android:textSize="25sp"-->
+<!--                android:text="View"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="@color/white" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

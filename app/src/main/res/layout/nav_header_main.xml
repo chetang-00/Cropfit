@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="30dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="Welcome to CROPFIT"
+        android:textColor="@color/white"
+        android:fontFamily="@font/merriweather_black"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+</LinearLayout>

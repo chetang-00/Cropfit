@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearData">
+
+        <include
+            layout="@layout/toolbardesign" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rview"
+            android:layout_width="match_parent"
+            android:layout_height="561dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearData"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Amount to be paid : "
+                android:textSize="18sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="@android:color/darker_gray"
+                android:gravity="start|center"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/cartAmount"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:text="500"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:gravity="end"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="end"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/linearData"
+            android:layout_alignParentBottom="true"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:id="@+id/payment"
+                android:text="Next"
+                android:backgroundTint="#517b0c"
+                android:layout_marginEnd="10dp"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

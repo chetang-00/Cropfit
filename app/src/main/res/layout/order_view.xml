@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="0dp">
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardMaxElevation="6dp"
+        card_view:contentPadding="5dp"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/r1"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/order"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Order ID :"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/robotoslab_variablefont_wght"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:id="@+id/orderid"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="20175"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/acme_regular"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#7D0552"
+                    android:id="@+id/payresult"
+                    android:textAlignment="viewEnd"
+                    android:paddingEnd="10dp"
+                    android:text="Success"
+                    android:textAllCaps="true"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/alegreya_mediumitalic"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order"
+                android:layout_marginTop="10dp"
+                android:id="@+id/datetime"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Order Date :"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/robotoslab_variablefont_wght"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:id="@+id/date_time"
+                    android:paddingLeft="10dp"
+                    android:text="Sun Oct 17 13:47:25 GMT+05:30 2021"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/robotoslab_variablefont_wght"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/datetime"
+                android:layout_marginTop="10dp"
+                android:id="@+id/total"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Total Products :"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/robotoslab_variablefont_wght"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:id="@+id/totpro"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="3"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/robotoslab_variablefont_wght"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/total"
+                android:layout_marginTop="10dp"
+                android:id="@+id/type"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Payment Type :"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/robotoslab_variablefont_wght"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:id="@+id/paytype"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:text="UPI"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/robotoslab_variablefont_wght"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/type"
+                android:layout_marginTop="10dp"
+                android:id="@+id/amount"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Total Amount :"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/robotoslab_variablefont_wght"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:id="@+id/totalamount"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAllCaps="true"
+                    android:text="500"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/robotoslab_variablefont_wght"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

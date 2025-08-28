@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bb"
+    tools:context=".ResultActivity">
+
+    <include
+        layout="@layout/toolbar1"
+        android:id="@+id/tool2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool2"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disease Name"
+            android:id="@+id/diseasename"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/alegreya_mediumitalic"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Symptoms:"
+            android:textColor="@color/black"
+            android:fontFamily="@font/merriweather_black"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/symptoms"
+            android:textColor="#3A3B3C"
+            android:text="Lesions begin as flecks on leaves that develop into small tan spots. Spots turn into elongated brick-red to cinnamon-brown pustules with jagged appearance. Found on both upper AND lower leaf surfaces. Pustules turn dark brown to black late in the season. Occurs on leaf only, NOT on sheaths, stalks, ear shanks and husk leaves"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:justificationMode="inter_word"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recommended Products:"
+            android:textColor="@color/black"
+            android:fontFamily="@font/merriweather_black"
+            android:layout_marginTop="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:id="@+id/pro1View"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/pro1"
+                android:paddingLeft="10dp"
+                android:text="Mancozeb Fungicide"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:layout_gravity="bottom"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:id="@+id/pro2View"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/pro2"
+                android:paddingLeft="10dp"
+                android:text="Mancozeb Fungicide"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:layout_gravity="bottom"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prevention:"
+            android:textColor="@color/black"
+            android:fontFamily="@font/merriweather_black"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/prevention"
+            android:text="Spraying of recommended product @ 2.5 g/l as soon as pustules appear and repeat at 10 days interval till flowering."
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textColor="#3A3B3C"
+            android:justificationMode="inter_word"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/medicine"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_medication_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get Medicine"
+                    android:fontFamily="@font/acme_regular"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/homepage"
+                android:layout_marginLeft="180dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_home_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/acme_regular"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

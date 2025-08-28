@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bb"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <include
+        layout="@layout/toolbar1"
+        android:id="@+id/tool2"/>
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tool2"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Edit Profile"
+                    android:textSize="30sp"
+                    android:textColor="#254117"
+                    android:fontFamily="@font/lobster_regular"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/inputname"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:hint="Name"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:textColorHint="#254117" />
+
+                    <EditText
+                        android:id="@+id/inputlandmark"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:hint="Landmark"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#254117" />
+
+                    <EditText
+                        android:id="@+id/inputaddress1"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:hint="Door No, House Name,"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#254117" />
+
+                    <EditText
+                        android:id="@+id/inputaddress2"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:hint="Address Lane 1,"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#254117" />
+
+                    <EditText
+                        android:id="@+id/inputaddress3"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:hint="Address Lane 2,"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#254117" />
+
+                    <EditText
+                        android:id="@+id/inputcity"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:hint="District"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#254117" />
+
+                    <EditText
+                        android:id="@+id/inputstate"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:hint="State"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#254117" />
+
+                    <EditText
+                        android:id="@+id/inputpincode"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:hint="PIN CODE"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="#254117" />
+
+                    <EditText
+                        android:id="@+id/inputphone"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:drawablePadding="10dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:hint="Phone Number"
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textColorHint="#254117" />
+
+                    <Button
+                        android:id="@+id/btnRegister"
+                        android:layout_width="300dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/kaushanscript_regular"
+                        android:textSize="25sp"
+                        android:text="Save"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>tool2
+
+            </LinearLayout>
+
+        </ScrollView>
+
+</LinearLayout>

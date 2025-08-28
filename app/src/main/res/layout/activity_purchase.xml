@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".PurchaseActivity">
+    <include
+        layout="@layout/toolbardesign"
+        android:id="@+id/lay"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:weightSum="2"
+        android:layout_below="@+id/lay"
+        android:id="@+id/layout1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Amount to be paid : "
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:gravity="start|center"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cartAmount1"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:text="500"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="end"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Complete your Payment with the below options:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="serif"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignBottom="@+id/linearData"
+            android:layout_alignParentBottom="true"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Debit Card"
+                android:id="@+id/debit"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:text="Credit Card"
+                android:id="@+id/credit"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Other Payment Modes:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="serif"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Net Banking"
+                android:id="@+id/net"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UPI"
+                android:id="@+id/upi"
+                android:textSize="20dp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EMI"
+                android:id="@+id/emi"
+                android:textSize="20dp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cash on Delivery"
+                android:id="@+id/cod"
+                android:textSize="20dp"/>
+
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:id="@+id/cancel"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:text="Pay Now"
+                android:id="@+id/pay1"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:padding="0dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardMaxElevation="6dp"
+        card_view:contentPadding="5dp"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/r1"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:textColor="@color/black"
+                android:text="Assistant Director of Agriculture"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/merriweather_black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:id="@+id/place"
+                android:textColor="#696969"
+                android:layout_marginTop="10dp"
+                android:text="Agasteeswaram "
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:fontFamily="@font/robotoslab_variablefont_wght"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/place"
+                android:layout_marginTop="10dp"
+                android:id="@+id/mail"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#696969"
+                    android:text="Email :"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/robotoslab_variablefont_wght"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    android:textColor="#696969"
+                    android:text="contact@cropfit.com"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/robotoslab_variablefont_wght"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mail"
+                android:layout_marginTop="10dp"
+                android:id="@+id/call"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#696969"
+                    android:text="Phone :"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/robotoslab_variablefont_wght"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phone"
+                    android:textColor="#696969"
+                    android:text="+91-1234567890"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/robotoslab_variablefont_wght"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/pcall"
+                android:layout_width="35dp"
+                android:layout_height="36dp"
+                android:layout_below="@+id/name"
+                android:layout_marginStart="-65dp"
+                android:layout_marginLeft="-65dp"
+                android:layout_marginTop="19dp"
+                android:layout_toEndOf="@id/place"
+                android:layout_toRightOf="@+id/place"
+                android:src="@drawable/ic_baseline_call_24" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
